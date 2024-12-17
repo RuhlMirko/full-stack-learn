@@ -8,3 +8,8 @@ img {
   height: 68px;
   width: 68px;
 }
+
+a {
+  color: grey;
+  text-decoration: none;
+}
