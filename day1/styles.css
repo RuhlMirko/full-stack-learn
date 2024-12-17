@@ -13,3 +13,20 @@ a {
   color: grey;
   text-decoration: none;
 }
+
+button {
+  width: 120px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+aside button {
+  background: black;
+  background: linear-gradient(
+    rgb(219, 123, 45) 0%,
+    rgb(199, 29, 108) 15%,
+    rgb(113, 13, 160) 75%,
+    rgb(101, 49, 221) 100%
+  );
+  color: white;
+}
