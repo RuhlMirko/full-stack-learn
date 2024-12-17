@@ -1,3 +1,10 @@
 body {
   padding: 20px 50px;
+  background-color: rgb(42, 40, 44);
+  color: white;
+}
+
+img {
+  height: 68px;
+  width: 68px;
 }
