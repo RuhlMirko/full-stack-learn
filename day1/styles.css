@@ -152,7 +152,7 @@ main {
 }
 
 .fact button {
-  background-color: #636363;
+  background-color: #646464;
   border: none;
   border-radius: 200px;
   font-size: 18px;
@@ -161,4 +161,10 @@ main {
   font-family: inherit;
   font-weight: bold;
   cursor: pointer;
+
+  transition: 0.5s;
+}
+
+.fact button:hover {
+  background-color: #333;
 }
