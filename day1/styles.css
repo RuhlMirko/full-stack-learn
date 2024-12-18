@@ -40,14 +40,19 @@ h1 {
   border-radius: 20px;
 }
 
-/*
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-jj
+header div {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
 
-
-*/
-
-/*Liberty*/
 ul {
   list-style: none;
 }
