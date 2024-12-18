@@ -78,14 +78,22 @@ section li {
   margin: 10px;
 }
 
-img {
+header img {
   height: 4rem;
   width: 4rem;
 }
 
-a {
+/*:link only styles anchor tags with a valid href */
+.fact a:link,
+.fact a:visited {
   color: #a8a8a8;
   text-decoration: none;
+  margin-left: 12px;
+  transition: 0.5s;
+}
+.fact a:hover,
+.fact a:active {
+  color: #bb81eb;
 }
 
 button {
