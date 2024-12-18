@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap");
 body {
-  padding: 20px 50px;
+  padding: 10px 20px;
   background-color: #2a282c;
   color: white;
   font-family: "Sono", sans-serif;
@@ -199,4 +199,32 @@ main {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  .fact {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+  .fact p {
+    text-align: left;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .fact--form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 900px) {
+  main ul {
+    padding: 0px;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
 }
