@@ -6,6 +6,11 @@ body {
   font-family: "Sono", sans-serif;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
 /*Lessons*/
 h1 {
   font-size: 2rem;
