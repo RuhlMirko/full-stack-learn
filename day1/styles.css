@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap");
 body {
   padding: 20px 50px;
-  background-color: rgb(42, 40, 44);
+  background-color: #2a282c;
   color: white;
 }
 
@@ -23,6 +23,12 @@ h1 {
   text-transform: uppercase;
   font-size: 14px;
   font-family: "Coiny", sans-serif;
+}
+
+.fact--form {
+  background-color: #636363;
+  padding: 15px 20px;
+  border-radius: 3px;
 }
 
 .tag {
@@ -56,7 +62,7 @@ img {
 }
 
 a {
-  color: grey;
+  color: #a8a8a8;
   text-decoration: none;
 }
 
@@ -67,7 +73,7 @@ button {
 
 aside button {
   width: 120px;
-  background: black;
+  background: #636363;
   background: linear-gradient(
     rgb(219, 123, 45) 0%,
     rgb(199, 29, 108) 15%,
