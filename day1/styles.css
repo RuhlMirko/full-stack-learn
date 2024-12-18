@@ -96,21 +96,46 @@ header img {
   color: #bb81eb;
 }
 
-button {
+.btn {
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 13px;
   border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-aside button {
-  width: 120px;
   background: #636363;
   background: linear-gradient(
+    135deg,
     rgb(219, 123, 45) 0%,
     rgb(199, 29, 108) 15%,
     rgb(113, 13, 160) 75%,
     rgb(101, 49, 221) 100%
   );
-  color: white;
+  color: inherit;
+  border: none;
+
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  transform: scale(110%) rotate(-2deg);
+}
+
+.btn-large {
+  font-size: 25px;
+  padding: 20px 32px 17px;
+}
+
+.btn-all {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.btn-category {
+  margin: 5px;
+  width: 100%;
+  background-image: none;
 }
 
 main {
