@@ -5,6 +5,7 @@ body {
   color: white;
 }
 
+/*Lessons*/
 h1 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -24,6 +25,20 @@ h1 {
   font-family: "Coiny", sans-serif;
 }
 
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny", sans-serif;
+}
+
+/*
+
+jj
+
+
+*/
+
+/*Liberty*/
 ul {
   list-style: none;
 }
