@@ -17,6 +17,15 @@ h1 {
 .fact {
   line-height: 1.4;
   font-size: 20px;
+  letter-spacing: -1px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.fact div {
+  margin-left: auto;
 }
 
 .fact span {
