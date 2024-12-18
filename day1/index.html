@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Today I Learned!</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -15,10 +16,10 @@
           <h1>Today I Learned</h1>
         </div>
 
-        <button class="btn btn-large">Share a fact</button>
+        <button class="btn btn-large share">Share a fact</button>
       </header>
 
-      <form class="fact--form">
+      <form class="fact--form hidden">
         <input type="text" placeholder="Share a fact with the world..." />
         <span>200</span>
         <input type="text" placeholder="Trustworthy source..." />
@@ -66,7 +67,7 @@
                 >
               </p>
               <span class="tag" style="background-color: #3b82f6"
-                >#technology#</span
+                >technology</span
               >
               <div>
                 <button>👍 24</button>
@@ -85,9 +86,7 @@
                   >(Source)</a
                 >
               </p>
-              <span class="tag" style="background-color: #eab308"
-                >#society#</span
-              >
+              <span class="tag" style="background-color: #eab308">society</span>
               <div>
                 <button>👍 11</button>
                 <button>🤯 2</button>

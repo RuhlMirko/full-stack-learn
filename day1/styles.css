@@ -196,3 +196,7 @@ main {
 .fact--form input:first-child {
   flex-grow: 1;
 }
+
+.hidden {
+  display: none;
+}
