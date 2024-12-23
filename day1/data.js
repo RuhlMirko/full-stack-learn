@@ -54,31 +54,30 @@ function shareFact() {
     : (shareBtn.textContent = "Share a fact");
 }
 
+function createFactsList(data) {
+  const htmlArr = data.map(
+    (fact) =>
+      `<li class="fact">
+      <p>${fact.text}  <a href="${fact.source}">(Source)</a>  </p> 
+      <span class="tag" style="background-color:${CATEGORIES[0].color}">${fact.category}</span>
+    
+      <div>
+        <button>👍 ${fact.votesInteresting}</button>
+        <button>🤯 ${fact.votesMindblowing}</button>
+        <button>⛔️ 4</button>
+      </div>
+    </li>
+    `
+  );
+
+  listFacts.insertAdjacentHTML("afterbegin", htmlArr.join(""));
+}
+
 const shareForm = document.querySelector(".fact--form");
 const shareBtn = document.querySelector(".share");
-
 const listFacts = document.querySelector(".facts-list");
 listFacts.innerHTML = "";
 
-const htmlArr = initialFacts.map(
-  (fact) =>
-    `<li class="fact">
-  <p>${fact.text}  <a href="${fact.source}">(Source)</a>  </p> 
-  <span class="tag" style="background-color:${CATEGORIES[0].color}">${fact.category}</span>
-  
-  <div>
-    <button>👍 ${fact.votesInteresting}</button>
-    <button>🤯 9</button>
-    <button>⛔️ 4</button>
-  </div>
-  </li>
-  `
-);
+createFactsList(initialFacts);
 
-listFacts.insertAdjacentHTML("afterbegin", htmlArr.join(""));
-/*
-for (let index in htmlArr) {
-  listFacts.insertAdjacentHTML("afterbegin", htmlArr[index]);
-}
-*/
 shareBtn.addEventListener("click", shareFact);
