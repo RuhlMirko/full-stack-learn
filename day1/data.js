@@ -78,6 +78,15 @@ const shareBtn = document.querySelector(".share");
 const listFacts = document.querySelector(".facts-list");
 listFacts.innerHTML = "";
 
+const response = fetch("https://miuaiiifxfdwfvdrghkt.supabase.co", {
+  headers: {
+    apikey:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pdWFpaWlmeGZkd2Z2ZHJnaGt0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ1NjY5NjUsImV4cCI6MjA1MDE0Mjk2NX0.TSSNidffdQmLqY-rK9VcTqBXy4feYHGpQqNcn1X2PSY",
+    authorization:
+      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pdWFpaWlmeGZkd2Z2ZHJnaGt0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ1NjY5NjUsImV4cCI6MjA1MDE0Mjk2NX0.TSSNidffdQmLqY-rK9VcTqBXy4feYHGpQqNcn1X2PSY",
+  },
+});
+console.log(response);
 createFactsList(initialFacts);
 
 shareBtn.addEventListener("click", shareFact);
